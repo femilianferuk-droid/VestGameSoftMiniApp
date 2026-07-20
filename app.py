@@ -28,8 +28,8 @@ app.config["SECRET_KEY"] = os.getenv("FLASK_SECRET_KEY", "change-me-in-productio
 app.config["SESSION_COOKIE_SECURE"] = os.getenv("COOKIE_SECURE", "1") != "0"
 app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 
-DATABASE_URL = os.getenv("DATABASE_URL", "")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://bothost_db_c7b70c49a8ed:QyhslYwQU7g1hT4OD69RP9jcV3EkzmXRLj4VH703ahQ@node1.pghost.ru:15761/bothost_db_c7b70c49a8ed")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8805400400:AAGAX6L8ohYpciEABCzPq5iJx-N8psw_Zx0")
 _schema_ready = False
 
 

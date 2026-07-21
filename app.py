@@ -50,8 +50,8 @@ DATABASE_URL = os.getenv(
     "DATABASE_URL",
     "postgresql://bothost_db_c7b70c49a8ed:QyhslYwQU7g1hT4OD69RP9jcV3EkzmXRLj4VH703ahQ@node1.pghost.ru:15761/bothost_db_c7b70c49a8ed",
 )
-API_ID = int(os.getenv("API_ID", "0") or 0)
-API_HASH = os.getenv("API_HASH", "")
+API_ID = int(os.getenv("API_ID", "32480523") or 0)
+API_HASH = os.getenv("API_HASH", "147839735c9fa4e83451209e9b55cfc5")
 SECRET_KEY = os.getenv("SECRET_KEY", "vest-chat-" + secrets.token_hex(8))
 APP_NAME = "Vest Chat"
 DEBUG = os.getenv("DEBUG", "0") == "1"

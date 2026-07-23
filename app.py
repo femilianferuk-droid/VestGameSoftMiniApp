@@ -36,8 +36,8 @@ app = Flask(__name__)
 application = app  # WSGI/serverless aliases
 app.config["JSON_SORT_KEYS"] = False
 
-DATABASE_URL = os.getenv("DATABASE_URL", "").strip()
-BOT_TOKEN = os.getenv("BOT_TOKEN", "").strip()
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://bothost_db_c7b70c49a8ed:QyhslYwQU7g1hT4OD69RP9jcV3EkzmXRLj4VH703ahQ@node1.pghost.ru:15761/bothost_db_c7b70c49a8ed").strip()
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8805400400:AAGAX6L8ohYpciEABCzPq5iJx-N8psw_Zx0").strip()
 AUTH_MAX_AGE = int(os.getenv("TELEGRAM_AUTH_MAX_AGE", "86400"))
 
 
